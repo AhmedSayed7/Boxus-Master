@@ -656,15 +656,32 @@
                         </div>
                         <Form name="contact" method="POST" data-netlify="true">
                         <div class="one_half last">
-                            <div class="contact-form">
                                 <input type="text" name="name" id="name" placeholder="Name"/>
                                 <input type="email" name="email" id="email" placeholder="Email" />
                                 <input id="subject" type="text" name="your-subject" placeholder="Subject">
                                 <textarea name="message" id="message" placeholder="Message" rows="7"></textarea>
                                 <input type="submit" onClick="SendMail()" value="SEND">
                             </div>
-                        </div>
-                        <Form>
+                            <form name="contact123" method="POST" data-netlify="true">
+								<div class="fields">
+									<div class="field half">
+										<input type="text" name="name" id="name" placeholder="Name" />
+									</div>
+									<div class="field half">
+										<input type="email" name="email" id="email" placeholder="Email" />
+									</div>
+									<div class="field">
+										<textarea name="message" id="message" placeholder="Message" rows="7"></textarea>
+									</div>
+									<div class="field">
+										<div data-netlify-recaptcha="true"></div>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" class="button primary" /></li>
+								</ul>
+							</form>
+                            </div>
                         <div class="clear"></div>
                     </div>
                     <div class="full-width">
