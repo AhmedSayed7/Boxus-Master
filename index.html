@@ -657,11 +657,11 @@
                         <Form name="contact" method="POST" data-netlify="true">
                         <div class="one_half last">
                             <div class="contact-form">
-                                <p><input id="name" type="text" name="your-name" placeholder="Name"></p>
-                                <p><input id="contact-email" type="email" name="your-email" placeholder="Email"></p>
-                                <p><input id="subject" type="text" name="your-subject" placeholder="Subject"></p>
-                                <p><textarea id="message" name="your-message" placeholder="Message"></textarea></p>
-                                <p><input type="submit" onClick="SendMail()" value="SEND"></p>
+                                <input type="text" name="name" id="name" placeholder="Name"/>
+                                <input type="email" name="email" id="email" placeholder="Email" />
+                                <input id="subject" type="text" name="your-subject" placeholder="Subject">
+                                <textarea name="message" id="message" placeholder="Message" rows="7"></textarea>
+                                <input type="submit" onClick="SendMail()" value="SEND">
                             </div>
                         </div>
                         <Form>
